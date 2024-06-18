@@ -45,10 +45,25 @@ class Theme {
     floatbox:
       "shadow-float rounded-xl left-[-10px] h-28 w-40 bg-white text-black",
   };
-  strikethrough = "text-black"
-  highlight = ""
-  subscript = ""
-  superscript = ""
+  strikethrough = "text-black";
+  highlight = "";
+  subscript = "";
+  superscript = "";
+  tasklist = {
+    text: "text-sm",
+    checkbox: {
+      outer: {
+        style: "rounded-sm border-2 border-gray-500 size-4",
+        checked: "bg-black",
+        unchecked: "",
+      },
+      inner: {
+        style: "",
+        checked: "size-1.5 bg-white rounded-full",
+        unchecked: "",
+      },
+    },
+  };
 }
 
 class DarkTheme implements Theme {}

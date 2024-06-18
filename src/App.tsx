@@ -16,6 +16,7 @@ import { Strikethrough } from "./markdown_components/Strikethrough";
 import { Subscript } from "./markdown_components/Subscript";
 import { Superscript } from "./markdown_components/Superscript";
 import { Table } from "./markdown_components/Table";
+import { Task, TaskList } from "./markdown_components/TaskList";
 import { UnorderedList } from "./markdown_components/UnorderedList";
 
 const App = () => {
@@ -25,8 +26,9 @@ const App = () => {
       <Blockquote text="quotes can be shown here" />
       <NewLine />
       Hello, typing <Bold text="Bold Text" /> and <Code text="code text" /> and{" "}
-      <Italic text="Some Italic" /> <Strikethrough text="A striked text" />{" "}
-      Some other texts 2<Superscript text="2" /> 2<Subscript text="2" /> and <Highlighted text="highlight" />{" "}
+      <Italic text="Some Italic" /> <Strikethrough text="A striked text" /> Some
+      other texts 2<Superscript text="2" /> 2<Subscript text="2" /> and{" "}
+      <Highlighted text="highlight" />{" "}
       <LinkedText
         text="This is my github profile."
         link="https://github.com/hem1t"
@@ -57,10 +59,12 @@ const App = () => {
       <OrderedList list={["Item 1", "Item 2"]} />
       <NewLine />
       <UnorderedList list={["Item 1", "Item 2"]} />
+      <NewLine />
       <ImageTag
         src="https://w.wallhaven.cc/full/2y/wallhaven-2yxp16.jpg"
         alt="A cat pfp"
       />
+      <TaskList list={[new Task("Task 1", true), new Task("Task 2", false)]} />
     </>
   );
 };
