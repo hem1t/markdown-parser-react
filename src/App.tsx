@@ -3,6 +3,7 @@ import { Bold } from "./markdown_components/Bold";
 import { Code } from "./markdown_components/Code";
 import { CodeBlock } from "./markdown_components/CodeBlock";
 import { DefinitionList } from "./markdown_components/DefinitionList";
+import { Footnote } from "./markdown_components/Footnote";
 import { Heading } from "./markdown_components/Heading";
 import { HorizontalLine } from "./markdown_components/HorizontalLine";
 import { ImageTag } from "./markdown_components/ImageTag";
@@ -39,6 +40,7 @@ const App = () => {
       <CodeBlock
         text={`import os;\n\nos.system('echo ita');\nos.system('echo ita');`}
       />
+      keen<Footnote text="1" desc="keen has some meaning in this article!" />
       <Table
         heads={["Syntax", "Description"]}
         rows={[

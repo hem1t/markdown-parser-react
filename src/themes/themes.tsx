@@ -12,7 +12,7 @@ class Theme {
   blockquote = {
     block: "bg-gray-200",
     bar: "w-2 bg-gray-500",
-    text: "ml-3 text-[12px] my-2",
+    text: "ml-3 text-[12px] my-2 text-gray-700",
   };
   ordered = {
     ol: "list-inside list-decimal border w-fit py-3 px-[10.5px]",
@@ -39,6 +39,11 @@ class Theme {
     head: "border-gray-400",
     elems: "text-sm",
     elem: "border-gray-400",
+  };
+  footnote = {
+    text: "cursor-pointer text-blue-800 select-none",
+    floatbox:
+      "shadow-float rounded-xl left-[-10px] h-28 w-40 bg-white text-black",
   };
 }
 
