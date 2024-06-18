@@ -11,6 +11,7 @@ import { Italic } from "./markdown_components/Italic";
 import { LinkedText } from "./markdown_components/LinkedText";
 import { NewLine } from "./markdown_components/NewLine";
 import { OrderedList } from "./markdown_components/OrderedList";
+import { Strikethrough } from "./markdown_components/Strikethrough";
 import { Table } from "./markdown_components/Table";
 import { UnorderedList } from "./markdown_components/UnorderedList";
 
@@ -21,7 +22,7 @@ const App = () => {
       <Blockquote text="quotes can be shown here" />
       <NewLine />
       Hello, typing <Bold text="Bold Text" /> and <Code text="code text" /> and{" "}
-      <Italic text="Some Italic" />{" "}
+      <Italic text="Some Italic" /> <Strikethrough text="A striked text" />{" "}
       <LinkedText
         text="This is my github profile."
         link="https://github.com/hem1t"
@@ -40,7 +41,8 @@ const App = () => {
       <CodeBlock
         text={`import os;\n\nos.system('echo ita');\nos.system('echo ita');`}
       />
-      keen<Footnote text="1" desc="keen has some meaning in this article!" />
+      keen
+      <Footnote text="1" desc="keen has some meaning in this article!" />
       <Table
         heads={["Syntax", "Description"]}
         rows={[

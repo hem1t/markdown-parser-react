@@ -8,7 +8,7 @@ interface Prop {
 
 export const Heading = ({ level, text, id }: Prop) => {
   let theme = useThemeContext();
-  id = id ? id : text.replace(" ", "_").toLocaleLowerCase();
+  id = id ? id : text.replace(" ", "-").toLocaleLowerCase();
 
   level = Math.min(6, Math.max(level, 0));
   switch (level) {
