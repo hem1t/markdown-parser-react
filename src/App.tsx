@@ -2,6 +2,7 @@ import { Blockquote } from "./markdown_components/Blockquote";
 import { Bold } from "./markdown_components/Bold";
 import { Code } from "./markdown_components/Code";
 import { Heading } from "./markdown_components/Heading";
+import { HorizontalLine } from "./markdown_components/HorizontalLine";
 import { ImageTag } from "./markdown_components/ImageTag";
 import { Italic } from "./markdown_components/Italic";
 import { LinkedText } from "./markdown_components/LinkedText";
@@ -22,7 +23,7 @@ const App = () => {
         link="https://github.com/hem1t"
       />
       .
-      <NewLine />
+      <HorizontalLine />
       <OrderedList list={["Item 1", "Item 2"]} />
       <NewLine />
       <UnorderedList list={["Item 1", "Item 2"]} />

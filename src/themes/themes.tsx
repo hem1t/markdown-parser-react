@@ -25,6 +25,7 @@ class Theme {
   code = "bg-gray-300 w-fit px-[4px] py-[1px] text-[10px] rounded-[5px]";
   link = "text-[12px] underline text-blue-500";
   img = "object-cover";
+  hr = "bg-gray-300"
 }
 
 class DarkTheme implements Theme {}
