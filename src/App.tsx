@@ -1,6 +1,7 @@
 import { Blockquote } from "./markdown_components/Blockquote";
 import { Bold } from "./markdown_components/Bold";
 import { Code } from "./markdown_components/Code";
+import { DefinitionList } from "./markdown_components/DefinitionList";
 import { Heading } from "./markdown_components/Heading";
 import { HorizontalLine } from "./markdown_components/HorizontalLine";
 import { ImageTag } from "./markdown_components/ImageTag";
@@ -24,6 +25,15 @@ const App = () => {
       />
       .
       <HorizontalLine />
+      <DefinitionList
+        term="hem1t"
+        list={[
+          "my name",
+          "my handle",
+          "A name to represent a person",
+          "Stands for hermit.",
+        ]}
+      />
       <OrderedList list={["Item 1", "Item 2"]} />
       <NewLine />
       <UnorderedList list={["Item 1", "Item 2"]} />
