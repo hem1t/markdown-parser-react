@@ -46,6 +46,9 @@ class Theme {
       "shadow-float rounded-xl left-[-10px] h-28 w-40 bg-white text-black",
   };
   strikethrough = "text-black"
+  highlight = ""
+  subscript = ""
+  superscript = ""
 }
 
 class DarkTheme implements Theme {}
