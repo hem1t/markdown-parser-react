@@ -6,8 +6,11 @@ content: [
   ],
   theme: {
     extend: {
-      transitionProperty: {
-        'todo-input': 'font-size, padding, text-align'
+      fontFamily: {
+        code: [
+          '"Fira Code"',
+          '"Source Code Pro"',
+        ]
       }
     },
   },

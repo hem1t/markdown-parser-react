@@ -31,6 +31,7 @@ class Theme {
     term: "font-[600] text-lg",
     elems: "text-gray-700 text-sm italic pl-10",
   }
+  codeblock = "font-code border shadow-inner shadow text-[15px] leading-5 rounded-lg"
 }
 
 class DarkTheme implements Theme {}

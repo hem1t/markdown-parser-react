@@ -1,6 +1,7 @@
 import { Blockquote } from "./markdown_components/Blockquote";
 import { Bold } from "./markdown_components/Bold";
 import { Code } from "./markdown_components/Code";
+import { CodeBlock } from "./markdown_components/CodeBlock";
 import { DefinitionList } from "./markdown_components/DefinitionList";
 import { Heading } from "./markdown_components/Heading";
 import { HorizontalLine } from "./markdown_components/HorizontalLine";
@@ -34,6 +35,7 @@ const App = () => {
           "Stands for hermit.",
         ]}
       />
+      <CodeBlock text={`import os;\n\nos.system('echo ita');\nos.system('echo ita');`} />
       <OrderedList list={["Item 1", "Item 2"]} />
       <NewLine />
       <UnorderedList list={["Item 1", "Item 2"]} />
