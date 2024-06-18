@@ -10,6 +10,7 @@ import { Italic } from "./markdown_components/Italic";
 import { LinkedText } from "./markdown_components/LinkedText";
 import { NewLine } from "./markdown_components/NewLine";
 import { OrderedList } from "./markdown_components/OrderedList";
+import { Table } from "./markdown_components/Table";
 import { UnorderedList } from "./markdown_components/UnorderedList";
 
 const App = () => {
@@ -35,7 +36,16 @@ const App = () => {
           "Stands for hermit.",
         ]}
       />
-      <CodeBlock text={`import os;\n\nos.system('echo ita');\nos.system('echo ita');`} />
+      <CodeBlock
+        text={`import os;\n\nos.system('echo ita');\nos.system('echo ita');`}
+      />
+      <Table
+        heads={["Syntax", "Description"]}
+        rows={[
+          ["Header", "Title"],
+          ["Paragraph", "Text"],
+        ]}
+      />
       <OrderedList list={["Item 1", "Item 2"]} />
       <NewLine />
       <UnorderedList list={["Item 1", "Item 2"]} />

@@ -30,8 +30,16 @@ class Theme {
     block: "",
     term: "font-[600] text-lg",
     elems: "text-gray-700 text-sm italic pl-10",
-  }
-  codeblock = "font-code border shadow-inner shadow text-[15px] leading-5 rounded-lg"
+  };
+  codeblock =
+    "font-code border shadow-inner shadow text-[15px] leading-5 rounded-lg";
+  table = {
+    table: "shadow-md",
+    heads: "font-semibold text-md",
+    head: "border-gray-400",
+    elems: "text-sm",
+    elem: "border-gray-400",
+  };
 }
 
 class DarkTheme implements Theme {}
