@@ -1,10 +1,3 @@
-import React from "react";
-
 export const NewLine = () => {
-  return (
-    <React.Fragment>
-      <br/>
-      <br/>
-    </React.Fragment>
-  )
-}
+  return <div className="size-3"></div>;
+};
